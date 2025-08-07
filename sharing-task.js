@@ -95,7 +95,7 @@ function greeting(username, userRole) {
     return `Name: ${username}, Role: ${userRole}`;
 }
 
-console.log('Task One: ')
+console.log('Task One: ');
 console.log(greeting('Alexis', 'Student'));
 
 function calculateCosts(numberOfAttendees, costPerAttendee) {
@@ -107,16 +107,16 @@ function calculateCosts(numberOfAttendees, costPerAttendee) {
     return total;
 }
 
-console.log('Task Two: ')
+console.log('Task Two: ');
 console.log(calculateCosts(120, 25));
 
 function emailValidator(email) 
 {
     return email.includes("@") 
-    && email.includes(".") 
-    && !email.includes(" ") 
-    && email.lastIndexOf(".") > email.indexOf("@")
+           && email.includes(".") 
+           && !email.includes(" ") 
+           && email.lastIndexOf(".") > email.indexOf("@");
 }
 
-console.log('Task Three: ')
-console.log(emailValidator("mike.denney@cooldude.gg"))
+console.log('Task Three: ');
+console.log(emailValidator("mike.denney@cooldude.gg"));
